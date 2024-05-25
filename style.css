@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+/* Hide dropdown menus initially */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.15);
+}
+
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover > .dropdown-menu,
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Ensure proper positioning of the sub-dropdowns */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+
+/* for heading fonts  */
+.radio-canada-big-heading{
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* for paragraph  */
+.radio-canada-big-para{
+    font-family: "Radio Canada Big", sans-serif;
+  }
+
+/* nav bar css start  */
+  .navbar-nav .nav-link{
+    color: white;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #FEC200 !important;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+
+
+.navbar-black {
+  background-color: black;
+  color: #fff;
+}
+
+/* FOR MOBILE */
+/* @media screen and (max-width: 767px) {
+
+.card_size1{
+  height: 10px;
+}} */
+
+/* FOR LAPTOP */
+@media screen and (max-width: 900px) {
+
+  .card_size1{
+    height: 400px;
+  }}
+
+
+
+/* indexx_page css */
+
+
+#video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#video-bg {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+} 
+
+@media screen and (max-width: 767px) {
+  .text_change{
+    color: black;  
+}
+#video-container{
+  display: none;
+}
+
+}
+
+
+
+
+
+.small-div {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+  gap: 10px; /* Gap between columns */
+  align-items: center; /* Center items vertically */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+
+.button1 {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid white; /* Underline effect */
+  background: transparent; /* Transparent background */
+  color: white; /* Text color */
+}
+
+.left_side_button {
+  background-color:#FFB22D;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input::-webkit-input-placeholder {
+  color: white; /* Placeholder text color */
+}
+
+.input-icon {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .small-div {
+    margin-top: 10px;
+      grid-template-columns: 2fr; /* Switch to a single column layout on smaller screens */
+  }
+  
+    [data-aos="fade-up"] {
+      opacity: 1 !important; /* Ensures the element is fully visible */
+      transform: translateY(0) !important; /* Resets any transformation */
+      transition: none !important; /* Disables any transition */
+    }
+
+    .automatic_text{
+      display: none;
+    }
+  }
+
+
+
+/* image resize  */
+
+.image_resize{
+  width:400px;
+  height: 500px;
+}
+
+
+ /* image next section */
+ /* .card {
+  position: relative;
+  cursor: pointer;
+} */
+
+.card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  width:80%;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card:hover .image_resize{
+opacity: 0.5;
+
+}
+
+
+@media screen and (max-width: 767px) {
+  .card_query {
+    margin-left: 8px !important;
+    margin-right: 0 !important;
+  }
+
+  .image_resize{
+    width:320px;
+    height: 400px;
+  }
+
+  .button_hide_mobile{
+    display: none;
+  }
+  
+}
+
+/* next card_css */
+
+/* .card:hover .card_yellow{
+border: 2px solid yellowgreen;
+} */
+
+
+.background-container{
+  background-image: url(wp-content/uploads/my_images/images/background_image_1.jpg);
+  background-size: cover;
+  width: auto;
+}
+
+.card:hover .icon_color_change {
+color: #FEC200 }
+
+
+.card:hover .color_change{
+color: #FEC200;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .cards_responsive
+  {
+    margin-left: 0px !important;
+    margin-right: 0 !important;
+  }
+}
+/* background image with text   */
+
+.background-container_22{
+background-image: url(wp-content/uploads/my_images/images/funfact-bg-1.jpg);
+background-size: cover;
+width: auto;
+height:700px;
+}
+
+.heading_color_change{
+color: rgb(89, 98, 230);
+}
+
+.space_para{
+padding-top: 60px;
+line-height: 1.5; 
+
+
+}
+
+@media screen and (max-width: 600px) {
+.background-container_22{
+
+    height: 1000px;
+}
+
+}
+
+
+.background-container{
+background-image: url(wp-content/uploads/my_images/images/background_image_1.jpg);
+background-size: cover;
+width: auto;
+
+}
+
+
+/* button */
+.skybutton {
+background-color:#FEC200; /* Default button background color */
+color: white; /* Default button text color */
+border-color:#FEC200; /* Default button border color */
+}
+
+.skybutton:hover {
+background-color: white; /* Button background color on hover */
+color: #55b09e; /* Button text color on hover */
+border-color:#FEC200; /* Button border color on hover */
+}
+
+/* index css end */
+
+  /* Adjust margin to create space around cards 
+  /* .carousel-item .col-md-4 {
+    margin-right: 10px;
+    margin-left: 10px;
+    
+  } */
+
+
+/* conters css start  */
+
+
+
+
+/* conter css end  */
+
+/* footer styling */
+
+.click_change:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+.click_change:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+/* ABOUT US PAGE STYLING  */
+
+.full-screen-video-container_About {
+  position: relative;
+  height: 80vh;
+  width: 100wh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.full-screen-video-container_About video {
+  z-index: -1;
+  position: absolute;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+
+
+.underline {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #FEC200; /* Change color, thickness, and style as needed */
+}
+
+
+
+
+/* cards section */
+
+.card_style{
+  background-color: #00192D;
+  color: white;
+}
+
+.card_style.card:hover{
+  background-color: #FEC200;
+  color: black;
+}
+
+
+
+
+/* ABOUT US PAGE STYLING   END*/
+
+
+/* OUR WORK PAGE CSS */
+
+/* Drop menue code  */
+
+/* Change background color of dropdown menu */
+.dropdown-menu {
+  background-color: rgba(128, 128, 128, 0.7);
+
+}
+
+
+
+/* Change text color of dropdown items */
+.dropdown-item {
+  color:#FEC200;
+}
+
+/* Change background color of active dropdown item */
+.dropdown-item:hover, .dropdown-item:focus {
+  border-bottom: 4px solid #FEC200 ;
+  color:white;
+  background-color: transparent; /* Initially transparent */
+
+}
+
+
+/* case studypage css */
+.full-screen-video-container {
+  position: relative;
+  height: 100vh;
+  width: 100wh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.full-screen-video-container video {
+  z-index: -1;
+  position: absolute;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* CLIENT PAGE CSS */
+/* CARDS_CAROUSEL */
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+
+
+/* SOCIAL MEDIA PAGES CSS */
+
+/* 2_Social_Media_Campagins */
+
+.background-container_social1{
+  background-image: url("wp-content/uploads/2021/07/about.png");
+  background-size: cover;
+  width: auto;
+  height:700px;
+}
+
+/* 2_Social_Media_Campagins */
+
+.background-container_social2{
+  width: auto;
+  height:500px;
+  background-color: #00192D;
+
+}
+
+
+/* AUTOMOTIVE PAGES CSS */
+@media screen and (max-width: 767px) {
+  .resize{
+    width: 100%;
+  }
+  .box{
+    margin-right: 0;
+  }
+
+ 
+}
+
+/* about us page css */
+@media screen and (max-width: 767px) {
+  .reduced_size{
+    width: 70%;
+  }}
+
+
+  /* AUTOMOTIVE */
+  @media screen and (max-width: 767px) {
+    .resize1{
+      width: 50%;
+    }}
